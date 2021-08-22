@@ -6,6 +6,7 @@ class AppColors {
   static const BG_2 = Color(0xff293145);
   static const BG_3 = Color(0xff21293d);
   static const AVATAR_BORDER_COLOR = Color(0xFF7E788A);
+  static const INPUT_BORDER_COLOR = Color(0xff808aa0);
 
 // gradient colors
 

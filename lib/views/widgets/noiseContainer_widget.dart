@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:protiaa_codex/constants/app_colors.dart';
 import 'package:protiaa_codex/constants/app_images.dart';
@@ -17,8 +16,8 @@ class NoiseContainer extends StatelessWidget {
         Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration:const BoxDecoration(
-            gradient:  AppColors.BACKGROUND_GRADIENT,
+          decoration: const BoxDecoration(
+            gradient: AppColors.BACKGROUND_GRADIENT,
           ),
           child: Opacity(
             opacity: 0.01,
