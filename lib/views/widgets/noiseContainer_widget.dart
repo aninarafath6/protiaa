@@ -20,7 +20,7 @@ class NoiseContainer extends StatelessWidget {
             gradient: AppColors.BACKGROUND_GRADIENT,
           ),
           child: Opacity(
-            opacity: 0.01,
+            opacity: 0.02,
             child: Image.asset(
               AppImages.NOISE_BACKGROUND,
               fit: BoxFit.cover,
