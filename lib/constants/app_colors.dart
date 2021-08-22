@@ -30,12 +30,9 @@ class AppColors {
     ),
   ];
 
-  static const DRIBBLE_COLOR = LinearGradient(
-    colors: [
-      Color(0xfffa8275),
-      Color(0xffdc486b),
-      Color(0xff913a68),
-    ],
+  // ignore: non_constant_identifier_names
+  static  Gradient (List<Color> colors)=> LinearGradient(
+    colors: colors,
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     stops: [.0, 0.2, 0.9],
