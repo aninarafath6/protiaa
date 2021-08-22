@@ -29,4 +29,15 @@ class AppColors {
       offset: Offset(-1, -8),
     ),
   ];
+
+  static const DRIBBLE_COLOR = LinearGradient(
+    colors: [
+      Color(0xfffa8275),
+      Color(0xffdc486b),
+      Color(0xff913a68),
+    ],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    stops: [.0, 0.2, 0.9],
+  );
 }
