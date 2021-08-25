@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:protiaa_codex/constants/app_colors.dart';
 import 'package:protiaa_codex/constants/app_images.dart';
 import 'package:protiaa_codex/views/screens/home/home_screen.dart';
-import 'package:protiaa_codex/views/widgets/noiseContainer_widget.dart';
 
 void main() {
   runApp(MyApp());

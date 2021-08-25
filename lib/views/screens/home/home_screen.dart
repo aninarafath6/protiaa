@@ -17,9 +17,10 @@ class HomeScreen extends StatelessWidget {
       body: NoiseContainer(
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSizes.DEFAULT_PADDING_HOR,
-              vertical: AppSizes.DEFAULT_PADDING_VERT,
+            padding: const EdgeInsets.only(
+              left: AppSizes.DEFAULT_PADDING_HOR,
+              right: AppSizes.DEFAULT_PADDING_HOR,
+              top: AppSizes.DEFAULT_PADDING_VERT,
             ),
             child: Column(
               children: <Widget>[
@@ -29,8 +30,9 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: ListView.separated(
+                    physics: BouncingScrollPhysics(),
                     itemBuilder: (context, index) => ItemCard(
-                    mediaModel: media[index],
+                      mediaModel: media[index],
                     ),
                     separatorBuilder: (context, index) => SizedBox(
                       height: 25,
