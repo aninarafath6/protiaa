@@ -2,7 +2,7 @@ class PostModel {
   final String id;
   final String title;
   final String date;
-  final String likes;
+  final double likes;
   final String image;
 
   PostModel({
