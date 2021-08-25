@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:protiaa_codex/constants/app_colors.dart';
 import 'package:protiaa_codex/constants/app_sizes.dart';
-
 import 'package:protiaa_codex/models/media_model.dart';
 import 'package:protiaa_codex/views/screens/individual/individual_app_bar.dart';
 import 'package:protiaa_codex/views/screens/individual/post_card.dart';
@@ -40,6 +39,25 @@ class IndividualPage extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print('floating action button clicked');
+        },
+        child: Container(
+          width: 60,
+          height: 60,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.green,
+            gradient: AppColors.Gradient(mediaModel.colors),
+            boxShadow: AppColors.AVATAR_DROP_SHADOW,
+          ),
+          child: Icon(
+            Icons.add_rounded,
+            size: 40,
+          ),
         ),
       ),
     );
