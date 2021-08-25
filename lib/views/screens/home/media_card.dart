@@ -91,8 +91,7 @@ class ItemCard extends StatelessWidget {
                       ),
                       Text(
                         mediaModel.userName,
-                        style: TextStyle(
-                            color: mediaModel.borderColor.withOpacity(.9)),
+                        style: TextStyle(color: mediaModel.borderColor),
                       ),
                     ],
                   ),

@@ -23,6 +23,7 @@ class IndividualPage extends StatelessWidget {
                 ),
                 child: mediaModel.posts != null
                     ? ListView.separated(
+                        physics: BouncingScrollPhysics(),
                         separatorBuilder: (context, index) => SizedBox(
                           height: 30,
                         ),
